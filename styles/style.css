@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&display=swap");
+
+
+:root {
+  --font: "Lato", sans-serif;
+  --secundary-color: #7fb77e;
+  --primary-color: #b1d7b4;
+  --background-color: #f7f6dc;
+  --details-color: #ffc090;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--font);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 18vh;
+  background-color: var(--primary-color)
+}
+
+.header__divContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logoPrincipal {
+  margin: 1rem 0 0 2vw;
+  height: 10rem;
+  width: 10rem;
+}
+
+.header__divIcons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  width: 25vw;
+}
+
+.header__iconHamburguesa {
+  height: 5rem;
+  width: 5rem;
+  margin-top: 5rem;
+}
+
+.header__iconTikTok,
+.header__iconYouTube,
+.header__iconInstagram,
+.header__iconFacebook,
+.header__Nav {
+  display: none;
+}
+
+main {
+  flex-grow: 1;
+}
+
+
+.slide img {
+  height: 65vh;
+  /* width: 50vw; */
+  margin-top: 50px;
+
+
+}
+
+
+.main__headingProductos {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.main__divProductos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 3rem;
+  background-color: var(--secundary-color);
+  width: 100vw;
+  min-height: 50rem;
+}
+
+.div__productosImagen {
+  margin: 1rem;
+  max-width: 35rem;
+  max-height: 35rem;
+}
+
+.main--headingRecetario {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.main--divRecetario {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  background-color: var(--secundary-color);
+  width: 100vw;
+  min-height: 50rem;
+}
+
+.div--imagenRight,
+.div--imagenLeft {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.div--parrafoImagen {
+  width: 35rem;
+}
+
+.div--imagenAceiteRelajante,
+.div--imagenRutinaFacial,
+.div--imagenAceiteManzanilla {
+  margin: 1rem;
+  max-width: 35rem;
+  max-height: 35rem;
+}
+
+.main__contactanos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+
+}
+
+
+.whatsapp,
+.logo__contactanos,
+.sectionIframe__contactanos {
+  width: 300px;
+  height: 50rem;
+}
+
+
+.whatsapp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.imagen__whatsapp {
+  max-width: 30%;
+  height: auto;
+}
+
+.imgLogo__contactanos {
+  width: 100%;
+  height: auto;
+}
+
+.iframe__contactanos {
+  height: auto;
+  width: 100%;
+}
+
+
+
+footer {
+  height: 5vh;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 5vh;
+  background-color: var(--primary-color);
+}
+
+.div__imagenPago {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 1rem;
+  width: 15rem;
+  height: 2rem;
+}
+
+.credit__card {
+  width: 2rem;
+  height: 2rem;
+}
+
+.textoPago {
+  font-size: 1rem;
+
+}
+
+.textoPago2 {
+  font-size: 1rem;
+}
+
+
+
+.logo__footer {
+  margin-right: 1rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+
+@media screen and (min-width: 750px) {
+  .header {
+    height: 15rem;
+  }
+
+  .header--iconHamburguesa {
+    display: none;
+  }
+
+  .header--iconTiktok,
+  .header--iconYoutube,
+  .header--iconInstagram,
+  .header--iconFacebook {
+    display: block;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .header--nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 3rem;
+    background-color: var(--details-color);
+  }
+
+  .header--navLink {
+    display: inline;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .header {
+    height: 18vh;
+  }
+
+  .header__iconHamburguesa {
+    display: none;
+  }
+
+  .header__iconTikTok,
+  .header__iconYouTube,
+  .header__iconInstagram,
+  .header__iconFacebook {
+    display: block;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .header__Nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 3rem;
+    background-color: var(--details-color);
+  }
+
+  .header__navLink {
+    display: inline;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+}
